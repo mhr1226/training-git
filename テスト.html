@@ -4,16 +4,25 @@
   <!--ここからヘッダーです-->
   <title>自己紹介</title>
     <meta charset="UTF-8">
+    <!-- =文字コードの意味。基本的にこれが使用される -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ユーザー側の画面表示の設定。スマホやPCで同じ見え方になるようにするもの -->
     <meta name="description" content="このサイトではまひろの自己紹介が見れます">
+    <!-- サイトの解説 表示されない事もあり（SEOの関係上） -->
       <link rel="stylesheet" href="テスト.css">
-      <link rel="stylesheet" href="テスト.js">
-      
-  <!--ここまでがヘッダーです-->
+      <!-- CSSはlink jsはscriptタグで(<script src ="jsのファイル名"></script>) -->
+      <script src ="テスト.js" defer></script> 
+          <!-- deferとは？    読み込みを最適化＋jqueryを使用する際 or 
+            読み込む順番を考える際に役立つらしい -->
+
+          <!-- htmlは順番に読み込む為、async or defer 属性を使わない場合重たくなる事がある -->
+
 </head>
 <!-- メモ 後で書き入れたいが、必要か分からないコードをコメントとして記入してみる -->
 <body>
   <header>
+
+    <!-- br = 改行; hr = 水平線 -->
       <div class="infomation">
         <h1>挨拶</h1>
           <p>こんにちは！<br>僕はまひろです！</p>
@@ -60,10 +69,59 @@
               <hr>
       </p>
       </div>
-  
+
+      <!-- 以下練習用のコメント有。コメントになっていれば消化済 -->
+
+
+  <!--alt属性の表示の仕方の練習
+    <img src="C:\Users\owner\Pictures" alt="うさぎの画像">
+  -->
+
+
+  <!-- 外部サイトの画像を絶対パスで表記する練習 
+    <img src = 
+    "https://terakoya.sejuku.net/static/media/logo.e144e8cb.svg" >-->
+
     <img src="Rectangle.png">
+    <br>
     <img src="GitHubサンプル.png"
+
     width="200" height="150">
+
+    <!-- リンクの練習 
+    <a href="https://terakoya.sejuku.net/"></a>
+      侍テラコヤへ移動-->
+
+
+      <!-- 画像付きリンクの練習 
+      <a href="画像リンクテスト用.html">
+        <img src="GitHubサンプル.png" alt="リンクテスト">
+      </a>
+      -->
+
+      <!-- フォームの練習 -->
+      <form action="">
+        <!-- label for "" に加えて id,name属性をinput typeタグに入れる事で視認性が上がる -->
+        <!-- 視認性が上がるだけでなく、１つの概念にラベリングすることで
+        JSやCSS、データーベースへのアクセス時に要素を指定したい時に使える優れもの -->
+        <!-- idはHTML上での要素を識別するためのコードの為、forをidで代用するという記述はしない方がよさげ -->
+        <label for="username">氏名</label>
+        <input type ="text" id="username" name="username"  placeholder="名前を入力してください">
+        <br>
+        <label for="userage">年代</label>
+          <select name="userage" id="userage">
+            <option value="1-10">10代以下</option>
+            <option value="20">20代</option>
+            <option value="30">30代</option>
+            <option value="40-">40代以上</option>
+          </select>
+        
+        <!-- plase holder 属性：プレイスホルダーとは、テキストボックスに記入例を表示する機能のことです。
+          未記入のテキストボックスに薄い色で記入例を表示することで、
+          ユーザーが何を入力するべきなのかひと目でわかるようになります。 -->
+    
+      </form>
+    
   </main>
   <footer>
     <p>Copyright IITENKI inc. Copyright All rights reserved.</p>
