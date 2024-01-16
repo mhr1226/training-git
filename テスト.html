@@ -85,43 +85,105 @@
     <img src="Rectangle.png">
     <br>
     <img src="GitHubサンプル.png"
-
+    
     width="200" height="150">
-
+    
     <!-- リンクの練習 
-    <a href="https://terakoya.sejuku.net/"></a>
+      <a href="https://terakoya.sejuku.net/"></a>
       侍テラコヤへ移動-->
-
-
+      <!-- リンクを使う時は別のhtmlファイルを読み込む事で、
+        サイト内での次のページを作成していく事が出来る -->
+      
+      
       <!-- 画像付きリンクの練習 
       <a href="画像リンクテスト用.html">
         <img src="GitHubサンプル.png" alt="リンクテスト">
       </a>
-      -->
-
-      <!-- フォームの練習 -->
-      <form action="">
-        <!-- label for "" に加えて id,name属性をinput typeタグに入れる事で視認性が上がる -->
+    -->
+    
+    <!-- フォームの練習 -->
+    <form action="">
+      <!-- label for "" に加えて id,name属性をinput 
+        typeタグに入れる事で視認性が上がる -->
         <!-- 視認性が上がるだけでなく、１つの概念にラベリングすることで
-        JSやCSS、データーベースへのアクセス時に要素を指定したい時に使える優れもの -->
-        <!-- idはHTML上での要素を識別するためのコードの為、forをidで代用するという記述はしない方がよさげ -->
-        <label for="username">氏名</label>
-        <input type ="text" id="username" name="username"  placeholder="名前を入力してください">
-        <br>
-        <label for="userage">年代</label>
+          JSやCSS、データーベースへのアクセス時に要素を指定したい時に使える優れもの -->
+          <!-- idはHTML上での要素を識別するためのコードの為、forをidで代用するという記述はしない方がよさげ -->
+          <label for="username">氏名</label>
+          <!-- type=textでテキストフォーマットが作れる -->
+          <input type ="text" id="username" name="username"  placeholder="名前を入力してください">
+          <br>
+          <label for="userage">年代</label>
           <select name="userage" id="userage">
             <option value="1-10">10代以下</option>
             <option value="20">20代</option>
             <option value="30">30代</option>
             <option value="40-">40代以上</option>
           </select>
+        <br>
+        <label for="question">お問い合わせ</label>
+        <!-- cols = colummnsの略。列の作成が出来る。例：30なら30文字分 -->
+        <!--  rows = 行の事。例：10なら10行分 -->
+          <textarea name="questionarea" id="questionarea" 
+          cols="20" rows="3" ></textarea>
+        <br>
+        <label for="men">男性</label>
+          <input type="radio" name="gender">
+        <label for="woman">女性</label>
+          <input type="radio" name="gender">
+        <label for="other">その他</label>
+          <input type="radio" name="gender">
         
-        <!-- plase holder 属性：プレイスホルダーとは、テキストボックスに記入例を表示する機能のことです。
+
+        
+          <!-- place holder 属性：プレイスホルダーとは、テキストボックスに記入例を表示する機能のことです。
           未記入のテキストボックスに薄い色で記入例を表示することで、
           ユーザーが何を入力するべきなのかひと目でわかるようになります。 -->
 
+          <!-- .(class名)でdiv classタグのショートカットが作れる -->
+          <!-- #(id名)でdiv idが付けられる -->
+        <div class="name"></div>
+
+        <!-- 親タグと子タグの同時入力 ：入れ子構造にしたい時は 親タグ名>子タグ名とする事で作る事が出来る -->
+        <!-- まとめては書けない -->
+        <ul>
+          <li></li>
+        </ul>
+
+        <!--タグの連結 (タグ名)+(タグ名)...としていく事で複雑な構造のタグを一気に作れる -->
+        <!-- *にすると掛け算になり、複数タグ入れたい時に便利 -->
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <!-- 入れ子構造とタグの連結は併用可能 -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <!-- タグを（）で囲んで、#や.などのショートカットを織り交ぜる事も可能 -->
+        <!-- 記述例 ul>(li>a)+(li.*3)+(li#*3) -->
+        <ul>
+          <li><a href=""></a></li>
+          <li class=""></li>
+          <li class=""></li>
+          <li class=""></li>
+          <li id=""></li>
+          <li id=""></li>
+          <li id=""></li>
+          <li><a href=""></a></li>
+        </ul>
+
         
-    
+
+
+
+
+
+
       </form>
     
   </main>
