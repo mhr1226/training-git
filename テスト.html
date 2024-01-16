@@ -123,16 +123,30 @@
         <label for="question">お問い合わせ</label>
         <!-- cols = colummnsの略。列の作成が出来る。例：30なら30文字分 -->
         <!--  rows = 行の事。例：10なら10行分 -->
+        <!-- テキストエリアはtextareaタグの使用 -->
           <textarea name="questionarea" id="questionarea" 
           cols="20" rows="3" ></textarea>
-        <br>
-        <label for="men">男性</label>
-          <input type="radio" name="gender">
-        <label for="woman">女性</label>
-          <input type="radio" name="gender">
-        <label for="other">その他</label>
-          <input type="radio" name="gender">
         
+          <br>
+          <!-- ボタンの作成にはradioタグを使用 -->
+        <label for="men">男性</label>
+          <input type="radio" name="gender" id="men">
+        <label for="woman">女性</label>
+          <input type="radio" name="gender" id="woman">
+        <label for="other">その他</label>
+          <input type="radio" name="gender" id="other">
+          <br>
+          <!-- データベースで各内容を集計する時の記述は？ -->
+          <!-- チェックボックスはinput type="checkbox"で -->
+        <label for="conpla">利用規約に同意する</label>
+        <input type="checkbox">
+        <br>
+        <!-- 送信ボタンの作成（submit） valueは文字列 -->
+        <!-- フォームの送信先についても今後学習 -->
+        <input type="submit" value="送信">
+
+        <input type="reset" value="リセット">
+
 
         
           <!-- place holder 属性：プレイスホルダーとは、テキストボックスに記入例を表示する機能のことです。
