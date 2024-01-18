@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>ヘッダー・メイン・フッターの練習</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ホームページの各区分けについて学習します">
+  <link rel="stylesheet" href="ホームページ構造練習.css">
+</head>
+<body>
+  <header>
+    <h1>ヘッドラインニュース</h1>
+    <nav>
+      <!-- 
+      <a href="ホームページ構造練習.html"></a>
+      <img src="https://terakoya.sejuku.net/static/media/logo.e144e8cb.svg" alt="侍">
+      画像の大きさの調整の仕方は？ -->
+      <a href="ホームページ構造練習.html">ホーム</a>
+      <a href="https://www.google.com">スポーツ</a>
+      <a href="https://www.google.com">経済</a>
+      <a href="https://www.google.com">天気</a>
+    </nav>
+
+    <article>
+      <section>
+        <h2>記事紹介</h2>
+          <h3>速報</h3>
+            <p>野球選手</p>
+            <p>サッカー試合</p>
+            <p>卓球オリンピック</p>
+            <p>バレー</p>
+      </section>
+
+      <section>
+        <h3>政治・経済</h3>
+        <p>環境保護</p>
+        <p>政治</p>
+        <p>住民税</p>
+      </section>
+      <section>
+        <h3>音源</h3>
+        <audio src="audiotag.mp3" controls ></audio>
+        <!-- 音源ではwidthが機能しない。（CSSで調整可能？） -->
+      </section>
+      <section>
+        <h3>動画</h3>
+        <video src="videotag.mp4" controls width="300"  height="300"></video>
+      </section>
+
+      <section>
+        <h3>折りたたみ機能・埋め込み機能</h3>
+        <!-- openタグを入れれば開きっぱなしになる -->
+        <!-- openタグを入れても開け閉めは可能 -->
+        <h4>詳細</h4>
+        <details>
+          <!-- summaryは概要、detailは詳細の意味 -->
+          <summary>地図を見る</summary>
+          <h4>ここでは折りたたみの機能について学習しています。</h4>
+          <h5>下記は東京タワーの地図です</h5>
+          <!-- iframeはinline frameの事。埋め込み機能。
+            画像や埋め込みのサイズによってはレイアウトが汚くなるので、detailsの中にいれてしまうのも有かも -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747798533325!2d139.74324421566527!3d35.658584838820154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1636041735064!5m2!1sja!2sjp
+          " frameborder="1" width="500" height="400"></iframe>
+          <!-- sectionタグをiframeの中に入れる事も可能。
+          内容をコンパクトにしたいときに -->
+
+          <section>
+            <h3>音源</h3>
+            <audio src="audiotag.mp3" controls ></audio>
+            <!-- 音源ではwidthが機能しない。（CSSで調整可能？） -->
+          </section>
+          <section>
+            <h3>動画</h3>
+            <video src="videotag.mp4" controls width="300"  height="300"></video>
+          </section>
+          <!-- frameborderは画像やwebページなどの埋め込みの枠線の太さ。デフォは1 -->
+        </details>
+      </section>
+    </article>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+    <p>&copy; SAMURAIニュース</p>
+    <!-- &copy;は特殊文字の表記の方法。他にも種類あるかも -->
+  </footer>
+
+</body>
+</html>
