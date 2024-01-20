@@ -25,7 +25,8 @@
     <!-- br = 改行; hr = 水平線 -->
       <div class="infomation">
         <h1>挨拶</h1>
-          <p>こんにちは！<br>僕はまひろです！</p>
+          <p>こんにちは！</p>
+          <p id="myName">僕はまひろです！</p>
             <hr>
       </div>
       <!-- リストの練習 -->
@@ -56,7 +57,7 @@
     </table>
       
 
-      <div>
+      <div class="favoriteFood">
         <h1>好きな食べ物</h1>
           <p>好きな食べ物はお刺身です</p>
             <hr>
@@ -143,6 +144,14 @@ get_user_info
           <!-- type=textでテキストフォーマットが作れる -->
           <input type ="text" id="username" name="username"  placeholder="名前を入力してください">
 
+          
+
+          <!-- idタグとclassタグの説明 -->
+          <!-- idは"個別の要素に対してCSSなどを適用したい時" -->
+          <!-- classは"複数の要素に対して・・・同上" -->
+          <!-- 数回しか使わない要素にはidを、何回も使う要素にはclassを -->
+          <!-- id,class共に数字や記号から始まるものは認識されない為注意 -->
+
           <!-- place holder 属性：プレイスホルダーとは、テキストボックスに記入例を表示する機能のことです。
           未記入のテキストボックスに薄い色で記入例を表示することで、
           ユーザーが何を入力するべきなのかひと目でわかるようになります。 -->
@@ -164,13 +173,13 @@ get_user_info
         
           <br>
           <!-- ボタンの作成にはradioタグを使用 -->
-        <label for="men">男性</label>
+          <div class="genderBox-left">
+            <label for="men">男性</label>
           <input type="radio" name="gender" id="men">
         <label for="woman">女性</label>
           <input type="radio" name="gender" id="woman">
         <label for="other">その他</label>
-          <input type="radio" name="gender" id="other">
-          <br>
+          <input type="radio" name="gender" id="other"></div>
           <!-- データベースで各内容を集計する時の記述は？ -->
           <!-- チェックボックスはinput type="checkbox"で -->
         <label for="conpla">利用規約に同意する</label>
@@ -198,8 +207,17 @@ get_user_info
 
         <!--タグの連結 (タグ名)+(タグ名)...としていく事で複雑な構造のタグを一気に作れる -->
         <!-- *にすると掛け算になり、複数タグ入れたい時に便利 -->
-        <p></p>
-        <p></p>
+        <div id="parent"> 
+          <p>テスト</p>
+            <div id="child">
+              <p>テスト2</p>
+            <div id="grandChild">
+              <p>テスト3</p>
+              </div>
+            </div>
+        </div>
+        
+        
         <p></p>
         <p></p>
 
