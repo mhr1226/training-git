@@ -7,6 +7,9 @@
 
 #parent > p{
   background-color: aqua;
+  color: #99ac44;
+  line-height:4;
+  letter-spacing: 0.3em;
 }
 /* div要素の中のdivをまとめて処理したい場合は、上記のように親要素の中の子孫要素という意味合いでparent div divとすると、3つ目のdivに対してだけCSSが適用される。 */
 
@@ -24,14 +27,77 @@
 
 /* ケースバイケースだが、毎回idやクラス名をつけなくても記述出来るから、コーディングが楽になるかも */
 
-
+body{
+  font-size: 25px;
+}
 
 /* 下記のように固有の属性タグにCSSを適用したい時は、
     []で囲むようにしておく */
-#myName,.genderBox-left,.favoriteFood,label[for="question"]{
-  font-size: 30px;
-  text-align: center;
-  color: blueviolet;
+#myName,.genderBox-left,.favoriteFood{
+  font-size: 5vw;
+  font-size: 3vh;
+  font-weight:bold;
+  text-align: left;
+  color:rgba(174, 0, 255,1);
   margin: 30px;
+  line-height: 1;
 }
+
+label[for="question"]{
+  background-color: #ff0080;
+  line-height: 2;
+  text-decoration:line-through;
+  border: double 3px #0000ff ;
+}
+/* border:dotted =  点線
+  border:dashed = 破線
+  border:solid =  通常線
+  border:double = 二重線*/
+
+/* CSS値の学習
+
+●px
+文字自体の大きさ等を個別で規定する時に使える。反面、柔軟性がないため、他のデバイスでは上手く表示されない事も
+
+●em(%)
+親要素のフォントサイズに対しての割合で大きさを決めるもの。
+親要素に依存する為、pxでの表示問題はクリアできるが、下位要素が入ってくると記述が複雑になる。
+尚、％も意味合い的にはほぼ同じとなる。
+
+●rem
+root emの略称。根本のフォントサイズに対して反応する。
+根本とはhtmlタグ内全てに影響。
+htmlの基本フォントサイズは16pxになる為、特に指定がなければそれを基準とする。
+
+●VW
+ビューポートの略称。view port width（webサイト全体の横幅）に依存している。
+100%で横幅いっぱいになり、そこから調整が出来る。
+(現実的に使うなら、1~4VWくらい)
+親要素に依存しない為、個別で指定したい時に便利。
+（但し、pxである程度の大きさが分かれば、そこまで使わない？）
+
+幅が広くなる為、全体に影響を加えたい時は便利だが、古いブラウザでは使えない事も。
+
+●VH
+VWのheightバージョン。
+縦幅になるが、スマホの場合はアドレスバーの部分は押し出されて表示されるため微調整が必要。
+
+*/
+
+/* CSSのプロパティについて
+
+●RGB
+赤・緑・青の比率を変えられる。グラデーションっぽい色にしたい時
+透明度を入れたいのであればRGBAにする
+
+VS CODEの場合、適当な色を指定してから直感的に操作が可能
+
+●letter spacing
+文章の隙間を決められる。1emで1文字分開けることが出来る
+
+●text-decoration
+文字に下線等を敷くことが出来る
+underline
+overline(上線)
+line-through(取り消し線)*/
 
