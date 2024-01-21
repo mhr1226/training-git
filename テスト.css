@@ -5,9 +5,6 @@
   color:#0000ff;
 }
 
-/* 下記のように固有の属性タグにCSSを適用したい時は、
-    []で囲むようにしておく */
-
 #parent > p{
   background-color: aqua;
 }
@@ -28,6 +25,9 @@
 /* ケースバイケースだが、毎回idやクラス名をつけなくても記述出来るから、コーディングが楽になるかも */
 
 
+
+/* 下記のように固有の属性タグにCSSを適用したい時は、
+    []で囲むようにしておく */
 #myName,.genderBox-left,.favoriteFood,label[for="question"]{
   font-size: 30px;
   text-align: center;
