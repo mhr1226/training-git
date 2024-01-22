@@ -44,15 +44,29 @@ body{
 }
 
 label[for="question"]{
-  background-color: #ff0080;
+  font-size: 30px;
+  font-family: serif;
+  /* font-familyには、連続して記述する事で、使えないフォントへの対応が出来る
+  例：AがダメならB、BもダメならCのように */
+  font-style: italic;
+  text-decoration: underline;
   line-height: 2;
-  text-decoration:line-through;
-  border: double 3px #0000ff ;
+  border-bottom: dotted 3px blue;
+  border-top: dashed 3px green;
+  border-left: solid 3px red;
+  border-right: double 3px blueviolet;
+  text-shadow: 2px 2px 4px pink;
+  /* text-shadow=影の右側 影の下側  影のぼけ具合  色 */
+
 }
 /* border:dotted =  点線
   border:dashed = 破線
   border:solid =  通常線
   border:double = 二重線*/
+
+  .bold{
+  font-weight: bold;
+  }
 
 /* CSS値の学習
 
