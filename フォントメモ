@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="フォントについての学習メモになります">
+  <title>フォントメモ</title>
+  <link rel="stylesheet" href="フォントメモ.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+<!-- 基本的にはシンプルなフォントがおすすめ
+基本的にはシンプルなフォントが読みやすいのでおすすめです。
+
+和文であれば以下の4つのフォントです。
+
+明朝体：ヒラギノ明朝、游明朝
+ゴシック体：ヒラギノ角ゴ、メイリオ
+また、欧文であれば以下の4つのフォントがおすすめです。
+
+セリフ体：Garamond、Times New Roman
+サンセリフ体：Arial、Helvetica 
+
+UD（ユニバーサルデザイン）のフォントを使う事で、0とOなど分かりにくい文字の判読性が上がる-->
+  </header>
+
+  <main>
+    <div class="font-traning"></div>
+<p>this is a Arial fonts,続いてメイリオフォントです</p>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
