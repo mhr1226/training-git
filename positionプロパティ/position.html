@@ -39,14 +39,22 @@
             上下左右を指定する際は、
             <br>本来の位置を基準とする
           </span>
-          <div class="realativeBox">
+          <div class="relativeBox">
 
           </div>
         </p>
         <li>absolute</li>
         <p>親要素を基準とした絶対的な位置</p>
+        <span class="bold">
+          この要素を使う時は、基準にしたい親要素に対してposition-relativeの設定が必要
+          <br>もし指定がない場合はbodyが基準となる
+        </span>
         <li>fixed</li>
         <p>スクロールしても固定される画面上での絶対的な位置</p>
+        <span class="bold">
+          画面に対しての絶対位置になる為、親要素の指定は不要
+          <br>一応親要素の指定も出来る
+        </span>
       </ul>
   </main>
 
